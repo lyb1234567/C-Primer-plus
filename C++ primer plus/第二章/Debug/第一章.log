@@ -1,0 +1,2 @@
+﻿1.1.obj : error LNK2005: _main already defined in Source.obj
+C:\Users\admin\Desktop\学习\C++\C++ primer plus\第一章\Debug\第一章.exe : fatal error LNK1169: one or more multiply defined symbols found

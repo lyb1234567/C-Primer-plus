@@ -1,0 +1,4 @@
+﻿  3.2.cpp
+C:\Users\admin\Desktop\学习\C++\C++ primer plus\第三章\3.2\3.2.cpp(7,30): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\admin\Desktop\学习\C++\C++ primer plus\第三章\3.2\3.2.cpp(8,27): warning C4305: 'initializing': truncation from 'double' to 'float'
+  3.2.vcxproj -> C:\Users\admin\Desktop\学习\C++\C++ primer plus\第三章\3.2\Debug\3.2.exe
