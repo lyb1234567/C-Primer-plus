@@ -4,7 +4,7 @@ int main()
 {
 	long long US_P;
 	long long World_P;
-	cout << "Enter the world's population:";
+	cout << "Enter the world's populationsdasd:";
 	cin >> World_P;
 	cout << "Enter the population of the US:";
 	cin >> US_P;
