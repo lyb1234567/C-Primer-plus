@@ -52,7 +52,24 @@ cin.get(name,size);
 cin.getline(name,size);
 \end{lstlisting}
 \end{itemize}
+同时，要始终记住cin以空格，制表符，换行符为结束标志，所以输入字符串到某一个点结束可以用如下代码
+\begin{lstlisting}
+#include <iostream>  
+#include <string>  
+using namespace std;
+int main()
+{
+    cout << "Enter words (to stop, type the word done):" << endl;
+    string str;
+    int count = 0;
+    while (cin >> str && str != "done")
+        count++;
+    cout << count << endl;
 
+    system("pause");
+    return 0;
+}
+\end{lstlisting}
 \subsubsection{自动存储、静态存和动态存储}
 \begin{itemize}
 \item\textbf{自动存储}当函数内部定义的常规变量使用自动存储空间，被称为自动变量，这意味着它们在所属的函数被调用时自动产生，在该函数结束时消亡。自动变量通常存储在\textbf{栈}中。这意味着执行代码块时，其中的变量将依次加入到栈中，而在离开代码块时，将按照相反的顺序释放这些变量，这被称为后进先出。因此，在程序执行过程中，栈将不断放大缩小
@@ -114,5 +131,100 @@ int main()
 \label{figure 1}
 \end{figure}
 \end{itemize}
+\section{循环和关系表达式}
+遍历一个字符串，可以通过while loop：
+\begin{lstlisting}
+int i=0;
+while (name[0]!='\0')
+{
+  cout<<name[i]<<":"<<int(name[i])<<endl;
+  i++;
+}
+return 0;
+\end{lstlisting}
+int(name[i])可以将ASCII 码转换成对应的数字
+\paragraph{}无限循环的两周方式：
+\begin{itemize}
+\item for(;;)
+\item while true
+\end{itemize}
+\paragraph{ }编写延时循环
+\begin{lstlisting}
+long wait=0;
+while(wait<10000)
+   wait++;
+\end{lstlisting}
+这种方法的问题是，当计算机处理器的速度发生变化时，必须修改计数限制。
+可以使用ctime库函数。
+\begin{lstlisting}
+#include<iostream>
+#include<ctime>
+using namespace std;
+int main()
+{
+	cout << "Enter the delay time in seconds:";
+	float secs;
+	cin >> secs;
+	clock_t delay = secs * CLOCKS_PER_SEC;
+	cout << "Starting\a\n";
+	clock_t start = clock();
+	while (clock() - start < delay)
+		;
+	cout << "done\a\n";
+	return 0;
+}
+\end{lstlisting}
+\subsection{C++为类型建立别名的方式有两种}
+\begin{itemize}
+\item $\#$define BYTE char
+\item typedef char byte(typedef typeName aliasName)
+\end{itemize}
+\subsection{基于范围的for循环}
+\paragraph{ }打印一个数组所有的元素
+\begin{lstlisting}
+    double prices[5] = { 1.2,2.3,4.1,3.2,1.6 };
+	for (double x : prices)
+	{
+		cout << x << endl;
+
+	}
+	return 0;
+\end{lstlisting}
+\subsubsection{要修改数组的元素}
+\begin{lstlisting}
+    double prices[5] = { 1.2,2.3,4.1,3.2,1.6 };
+	for (double &x : prices)
+	{
+		x = x * 0.8;
+		cout << x << endl;
+
+	}
+	return 0;
+\end{lstlisting}
+或者基于范围的for循环和初始化列表：
+\begin{lstlisting}
+    for(int x:{3,5,2,8,6})
+       cout<<x;
+\end{lstlisting}
+\begin{center}
+\begin{table}[ht]
+\caption{cin.get(ch)与 cin.get()} % title of Table
+\centering % used for centering table
+\begin{tabular}{c|c|c  } % centered columns (3 columns)
+\hline\hline %inserts double horizontal lines
+属性 &cin.get(ch) &ch==cin.get() \\ [0.5ex] % inserts table
+%heading
+\hline % inserts single horizontal line
+ 传递输入字符的方式& 赋给参数ch & 将函数返回赋值给ch  \\
+ \hline
+用于字符输入时函数的返回值 & istream对象（执行bool转换后为true） & int 类型的字符编码  \\
+\hline
+到达EOF时函数的返回值& istream对象（执行bool转换之后为false） &EOF  \\
+\hline %inserts single line
+\end{tabular}
+\label{table:nonlin} % is used to refer this table in the text
+\end{table}
+
+\end{center}
 \end{spacing}
 \end{document}

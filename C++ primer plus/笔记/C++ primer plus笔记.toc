@@ -1,3 +1,10 @@
 \contentsline {section}{\numberline {1}指针，数组，结构体}{1}{}%
 \contentsline {subsubsection}{\numberline {1.0.1}在输入字符的时候有三种情况}{1}{}%
-\contentsline {subsubsection}{\numberline {1.0.2}自动存储、静态存和动态存储}{2}{}%
+\contentsline {subsubsection}{\numberline {1.0.2}自动存储、静态存和动态存储}{3}{}%
+\contentsline {section}{\numberline {2}循环和关系表达式}{6}{}%
+\contentsline {paragraph}{}{7}{}%
+\contentsline {paragraph}{ }{7}{}%
+\contentsline {subsection}{\numberline {2.1}C++为类型建立别名的方式有两种}{8}{}%
+\contentsline {subsection}{\numberline {2.2}基于范围的for循环}{8}{}%
+\contentsline {paragraph}{ }{8}{}%
+\contentsline {subsubsection}{\numberline {2.2.1}要修改数组的元素}{8}{}%
