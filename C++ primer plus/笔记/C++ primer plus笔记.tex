@@ -224,7 +224,19 @@ int main()
 \end{tabular}
 \label{table:nonlin} % is used to refer this table in the text
 \end{table}
-
 \end{center}
+\section{const 和指针的使用}
+\begin{lstlisting}
+int a=30;
+const int *ps=&a;
+int *const finger=&a;
+\end{lstlisting}
+上述情况中，const关键字位置不同。这使得finger 只能指向a的位置，但是可以通过修改*finger的值来修改a的值，而ps可以重新指向另一个变量的位置，但是不能修改自己本身*ps的值。
+另一种情况，还可以声明指向const对象的const指针。
+\begin{lstlisting}
+double trouble=2.3E30;
+const double*const stick=&trouble;
+\end{lstlisting}
+其中stick只能指向trouble,且stick不可修改trouble的值，简而言之strick和*stcick都是const。 
 \end{spacing}
 \end{document}

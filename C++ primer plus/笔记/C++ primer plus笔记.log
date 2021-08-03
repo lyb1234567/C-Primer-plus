@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.7.11)  19 JUL 2021 22:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.7.11)  1 AUG 2021 16:39
 entering extended mode
 **"./C++ primer plusç¬”è®°.tex"
 (C++ primer plusç¬”è®°.tex
@@ -577,67 +577,75 @@ Overfull \hbox (124.12962pt too wide) in paragraph at lines 213--226
  [][] 
  []
 
-[9] (C++ primer plusç¬”è®°.aux)
+[9]
+Overfull \hbox (35.10075pt too wide) in paragraph at lines 240--241
+\C70/rm/m/n/12/51 v \C70/rm/m/n/12/4e -\OT1/cmr/m/n/12 stick\C70/rm/m/n/12/53 ê
+ \C70/rm/m/n/12/80 ý \C70/rm/m/n/12/63  \C70/rm/m/n/12/54 \OT1/cmr/m/n/12 tro
+uble,\C70/rm/m/n/12/4e \OT1/cmr/m/n/12 stick\C70/rm/m/n/12/4e  \C70/rm/m/n/12
+/53 ï \C70/rm/m/n/12/4f î \C70/rm/m/n/12/65 9\OT1/cmr/m/n/12 trouble\C70/rm/m/n
+/12/76 „ \C70/rm/m/n/12/50 <|\C70/rm/m/n/12/ff | \C70/rm/m/n/12/7b € \C70/rm/m
+/n/12/80  \C70/rm/m/n/12/8a   \C70/rm/m/n/12/4e K\OT1/cmr/m/n/12 strick\C70/rm
+/m/n/12/54 Œ\OT1/cmr/m/n/12 *stcick\C70/rm/m/n/12/90 ý
+ []
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[10] (C++ primer plusç¬”è®°.aux) ) 
 Here is how much of TeX's memory you used:
- 8840 strings out of 478864
- 140174 string characters out of 2848660
- 630600 words of memory out of 3000000
- 26352 multiletter control sequences out of 15000+600000
- 446913 words of font info for 183 fonts, out of 8000000 for 9000
+ 8882 strings out of 478864
+ 140706 string characters out of 2848660
+ 631600 words of memory out of 3000000
+ 26389 multiletter control sequences out of 15000+600000
+ 447723 words of font info for 186 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  76i,8n,82p,730b,1920s stack positions out of 5000i,500n,10000p,200000b,80000s
-<C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/s
-imhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS
-/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf> <C:\Users\admin\AppData\Local\M
-iKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/WINDOWS/Fonts/simhei.t
-tf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/
+<C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Font
+s/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WIND
+OWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf>
+<C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf> <C:\Users\admin\AppD
+ata\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/WINDOWS/Fon
+ts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WIN
+DOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc
+><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/si
+msun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/
+Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/
+WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.
+ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts
+/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDO
+WS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><
+C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/sims
+un.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fo
+nts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WI
+NDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc> <C:\Users\admin\AppData\Lo
+cal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/WINDOWS/Fonts/sim
+sun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/F
+onts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/W
+INDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.t
+tf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/
 simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOW
-S/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C
-:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhe
+S/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C
+:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhe
 i.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fon
-ts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WIN
+ts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WIN
 DOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc
 ><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/si
 msun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/
 Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/
-WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.
-ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts
-/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc> <C:\User
-s\admin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:
-/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei
-.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Font
-s/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WIND
-OWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc>
-<C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/sim
-sun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/F
-onts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/W
-INDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.t
-tf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/
-simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOW
-S/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C
-:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsu
-n.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fon
-ts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WIN
-DOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf
-><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/si
-mhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/
-Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/
-WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.
-ttc><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmbx10.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmbx12.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmmi10.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/admin/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/admin/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/admin/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "C++ primer plusç¬”è®°.pdf" (10 pages, 581265 bytes).
+WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.
+ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts
+/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDO
+WS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><
+C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/sims
+un.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fo
+nts/simsun.ttc><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmbx10.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmbx12.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/admin/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/admin/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/admin/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/adm
+in/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on "C++ primer plusç¬”è®°.pdf" (11 pages, 597084 bytes).
 PDF statistics:
- 524 PDF objects out of 1000 (max. 8388607)
+ 536 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 250 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 254 words of extra memory for PDF output out of 10000 (max. 10000000)
 
