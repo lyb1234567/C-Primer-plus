@@ -142,8 +142,25 @@ while (name[0]!='\0')
 }
 return 0;
 \end{lstlisting}
+\paragraph{ }指针的方式
+\begin{lstlisting}
+#include<iostream>
+using namespace std;
+int main()
+{
+    const char* name = "sadas";
+	cout << name << endl;
+	
+	while (*name)
+	{
+		cout << *name << endl;
+		name++;
+	}
+	return 0;
+}
+\end{lstlisting}
 int(name[i])可以将ASCII 码转换成对应的数字
-\paragraph{}无限循环的两周方式：
+\paragraph{}无限循环的两中方式：
 \begin{itemize}
 \item for(;;)
 \item while true

@@ -1,0 +1,3 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Preview\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (const.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  const.cpp
+  const.vcxproj -> C:\Users\admin\Desktop\学习\C++\C-primer-plus\C++ primer plus\第八章\const\Debug\引用结构.exe
