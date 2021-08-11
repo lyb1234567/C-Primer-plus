@@ -1,0 +1,5 @@
+﻿  add.cpp
+  ns_f.cpp
+C:\Users\admin\Desktop\学习\C++\C-primer-plus\C++ primer plus\第九章\9.4\9.4\ns_f.cpp(30,30): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+  Generating Code...
+  9.4.vcxproj -> C:\Users\admin\Desktop\学习\C++\C-primer-plus\C++ primer plus\第九章\9.4\9.4\Debug\9.4.exe
