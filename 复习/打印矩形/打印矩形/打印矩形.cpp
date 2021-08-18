@@ -62,6 +62,7 @@ public:
 class food_cls {
     position pos;
     char symbol;
+    
 public:
     food_cls() : symbol('X'), pos() {
         pos.x = pos.y = -1;
