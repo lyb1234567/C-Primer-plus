@@ -1,14 +1,15 @@
 #include"list.h"
 #include<iostream>
+#include<string>
 using namespace std;
 int main()
 {
 	list a;
-	cout << a;
 	a.append(3);
-	a.append(4);
-	a.append(7);
-	a.append(10);
-	a.remove(7);
-	return 0;
+	a.append(1);
+	a.append(21);
+	a.append(25);
+	a.append(13);
+	cout << a << endl;
+	cout << a.min();
 }
