@@ -188,7 +188,16 @@ ostream& operator <<(ostream& os,   list& lst1)
 				else
 					os << "," << lst1.lst[j];
 			}
+			lst1.mode = list::STR;
+			for (int j = 0; j < lst1.len(); j++)
+			{
+				if (j == 0)
+					os << ","<<lst1.s[j];
+				else
+					os << "," << lst1.s[j];
+			}
 			os << "]";
+			lst1.mode = list::DOUBLE;
 			return os;
 		}
 	else if (lst1.mode == list::STR)
@@ -208,18 +217,25 @@ ostream& operator <<(ostream& os,   list& lst1)
 				else
 					os << "," << lst1.s[j];
 			}
+			lst1.mode = list::DOUBLE;
+			for (int j = 0; j < lst1.len(); j++)
+			{
+				if (j == 0)
+					os <<","<<lst1.lst[j];
+				else
+					os << "," << lst1.lst[j];
+			}
 			os << "]";
+			lst1.mode = list::STR;
 			return os;
 		}
 	}
 	
  }
 
-template <class T>
-T &list::operator[](int index)
+double &list::operator[](int index)
 {
-	if (mode == DOUBLE)
-	{
+	
 		if (index > len())
 		{
 			cout << "Out of range" << endl;
@@ -227,16 +243,26 @@ T &list::operator[](int index)
 			return lst[0];
 		}
 		return lst[index];
+	
+}
+list list::operator[](const char * str)
+{
+	cout << p << endl;
+	int slice= stoi(str);
+	list sum;
+	if (mode == list::DOUBLE)
+	{
+		for (int j = slice; j < len(); j++)
+		{
+			sum.append(lst[j]);
+		}
 	}
-	else if (mode==STR)
+	else if(mode == list::STR)
+	{
+		for (int j = slice; j < len(); j++)
 		{
-		if (index > len())
-		{
-			cout << "Out of range" << endl;
-			// 返回第一个元素
-			return s[0];
+			sum.append(s[j]);
 		}
-		return s[index];
-		}
-
+	}
+	return sum;
 }

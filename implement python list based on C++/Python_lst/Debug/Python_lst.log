@@ -1,2 +1,3 @@
 ﻿  main.cpp
-  Python_lst.vcxproj -> C:\Users\admin\Desktop\学习\C++\C-primer-plus\C++ primer plus\实现python列表简单的功能\Python_lst\Debug\Python_lst.exe
+C:\Users\admin\Desktop\学习\C++\C-primer-plus\implement python list based on C++\Python_lst\main.cpp(11,9): warning C4101: 'n': unreferenced local variable
+  Python_lst.vcxproj -> C:\Users\admin\Desktop\学习\C++\C-primer-plus\implement python list based on C++\Python_lst\Debug\Python_lst.exe

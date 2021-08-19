@@ -34,8 +34,8 @@ public:
 	friend list operator+(list& l1, list& l2);
 	friend list operator +(double n,  list& lst1);
     friend list operator -(double n,  list& lst1);
-	template<class T>
-	T& operator[](int index);
+	double& operator[](int index);
+	list operator[](const char *str);
 
 };
 #endif // !LIST_H_
