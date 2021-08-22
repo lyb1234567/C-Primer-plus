@@ -7,8 +7,9 @@ using namespace std;
 int main() {
     list a;
     a.append(3);
+    a.append(4);
+    a.append("j");
     a.append(5);
-    a.append(6);
-    cout << a << endl;
-    cout << a[2];
+    a.remove("j");
+    cout << a;
 }

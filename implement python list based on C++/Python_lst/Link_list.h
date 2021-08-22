@@ -19,7 +19,8 @@ public:
     void push_head(double new_data);
     void push_head(string new_str);
     void push_tail( double new_data);
-    void push_tail( string new_str);
+    void push_tail(string new_str);
+    Node* get_head() { return head; };
     bool remove(double a);
     bool remove( string str);
     void add_number(double n);

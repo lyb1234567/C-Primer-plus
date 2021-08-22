@@ -10,10 +10,10 @@ private:
 	Link_list lst;
 public:
 	list();
-	list(const string& str);
+	list( const char* str);
 	int len() { return lst.len(); }
 	void append(double n);
-	void append(string s);
+	void append( string s);
 	void  remove(double n);
 	void  remove(string s);
 	double max();

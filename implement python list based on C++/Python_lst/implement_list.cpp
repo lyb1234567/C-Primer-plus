@@ -7,12 +7,16 @@ list::list()
 {
 	
 }
-list::list(const string& str)
+list::list(  const char * str)
 {
-	for (int i = 0; i < str.length(); i++)
+	Node* temp = lst.get_head();
+	while (*str)
 	{
-		lst.push_tail(str[i]);
-	  }
+		temp->str = *str;
+		temp->data = NULL;
+		temp = temp->next;
+		str++;
+	}
 }
 void list:: append(double n)
 {
