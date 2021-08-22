@@ -16,6 +16,7 @@ private:
 public:
     int len();
     bool isempty();
+    void str_list(string str);
     void push_head(double new_data);
     void push_head(string new_str);
     void push_tail( double new_data);

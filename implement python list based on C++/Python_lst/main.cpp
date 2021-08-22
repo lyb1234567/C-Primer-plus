@@ -5,11 +5,9 @@
 #include <cstddef>
 using namespace std;
 int main() {
-    Link_list a;
-    a.push_tail(3);
-    a.push_tail(5);
-    a.push_tail(4);
-    a.push_tail("s");
-    a.reverse();
-    a.print_list();
+    list a("sbcsad");
+    a.append(3);
+    a.remove("d");
+    cout << a;
+    return 0;
 }

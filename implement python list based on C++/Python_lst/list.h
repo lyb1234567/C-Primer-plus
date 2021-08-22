@@ -10,7 +10,7 @@ private:
 	Link_list lst;
 public:
 	list();
-	list( const char* str);
+	list( string str);
 	int len() { return lst.len(); }
 	void append(double n);
 	void append( string s);

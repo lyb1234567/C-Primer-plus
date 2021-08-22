@@ -120,6 +120,15 @@ void Link_list::merge(Link_list& lst)
         temp->next = lst.head;
     }
 }
+void Link_list::str_list(string str)
+{
+    string s;
+    for (int i = 0; i < str.length(); i++)
+    {
+        s = str[i];
+        push_tail(s);
+    }
+}
 void Link_list::reverse()
 {
     Node* current = head;
