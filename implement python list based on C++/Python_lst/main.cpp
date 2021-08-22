@@ -5,11 +5,11 @@
 #include <cstddef>
 using namespace std;
 int main() {
-    list a;
-    a.append(3);
-    a.append(4);
-    a.append("j");
-    a.append(5);
-    a.remove("j");
-    cout << a;
+    Link_list a;
+    a.push_tail(3);
+    a.push_tail(5);
+    a.push_tail(4);
+    a.push_tail("s");
+    a.reverse();
+    a.print_list();
 }

@@ -20,6 +20,7 @@ public:
     void push_head(string new_str);
     void push_tail( double new_data);
     void push_tail(string new_str);
+    void reverse();
     Node* get_head() { return head; };
     bool remove(double a);
     bool remove( string str);

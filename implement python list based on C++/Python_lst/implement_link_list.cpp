@@ -120,6 +120,20 @@ void Link_list::merge(Link_list& lst)
         temp->next = lst.head;
     }
 }
+void Link_list::reverse()
+{
+    Node* current = head;
+    Node* link_next = head;
+    head = NULL;
+    while (current)
+    {
+        link_next = link_next->next;
+        current->next = head;
+        head = current;
+        current = link_next;
+    }
+
+}
 bool Link_list::remove(double a)
 {
     if (len() == 0)
