@@ -5,9 +5,11 @@
 #include <cstddef>
 using namespace std;
 int main() {
-    list a("sbcsad");
-    a.append(3);
-    a.remove("d");
-    cout << a;
+    list a;
+    a.append(1);
+    a.append(10);
+    a.append(12);
+    list c = a["3:"];
+    cout << c;
     return 0;
 }

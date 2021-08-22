@@ -274,4 +274,48 @@ int  Link_list::find_nth(int n)
         }
     }
 }
+int Link_list::search(double n)
+{
+    int count = 0;
+    if (isempty())
+    {
+        throw std::invalid_argument("It is empty!!!!");
+    }
+    else
+    {
+        Node* temp = head;
+        while (temp)
+        {
+            if (temp->data == n)
+            {
+                return count;
+            }
+            count = count + 1;
+            temp = temp->next;
+        }
+        return -1;
+    }
+}
+int Link_list::search(string str)
+{
+    int count = 0;
+    if (isempty())
+    {
+        throw std::invalid_argument("It is empty!!!!");
+    }
+    else
+    {
+        Node* temp = head;
+        while (temp)
+        {
+            if (temp->str == str)
+            {
+                return count;
+            }
+            count = count + 1;
+            temp = temp->next;
+        }
+        return -1;
+    }
+}
 

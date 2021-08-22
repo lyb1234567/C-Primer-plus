@@ -16,6 +16,8 @@ public:
 	void append( string s);
 	void  remove(double n);
 	void  remove(string s);
+	int index(double n);
+	int index(string str);
 	double max();
 	double min();
 	void sort();

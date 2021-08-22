@@ -21,6 +21,7 @@ public:
     void push_head(string new_str);
     void push_tail( double new_data);
     void push_tail(string new_str);
+    void change_head(Node* n) { head = n; };
     void reverse();
     Node* get_head() { return head; };
     bool remove(double a);
@@ -30,6 +31,8 @@ public:
     void print_list();
     void merge(Link_list& lst);
     int find_nth(int n);
+    int search(double n);
+    int search(string str);
 
 };
 #endif // !LINK_H_H

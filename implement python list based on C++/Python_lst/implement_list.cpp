@@ -62,24 +62,33 @@ int list::operator[](int index)
 	return lst.find_nth(index + 1);
 	
 }
-//list list::operator[](const char * str)
-//{
-//	cout << p << endl;
-//	int slice= stoi(str);
-//	list sum;
-//	if (mode == list::DOUBLE)
-//	{
-//		for (int j = slice; j < len(); j++)
-//		{
-//			sum.append(lst[j]);
-//		}
-//	}
-//	else if(mode == list::STR)
-//	{
-//		for (int j = slice; j < len(); j++)
-//		{
-//			sum.append(s[j]);
-//		}
-//	}
-//	return sum;
-//}
+int list::index(double n)
+{
+	int a=lst.search(n);
+	return a;
+}
+int list::index(string str)
+{
+	int a = lst.search(str);
+	return a;
+}
+list list::operator[](const char * str)
+{
+	Link_list link;
+	int slice= stoi(str);
+	int count = 0;
+	Node* current = lst.get_head();
+	while (current)
+	{
+		if (count == slice)
+		{
+			lst.change_head(current);
+			return *this;
+		}
+		count = count + 1;
+		current = current->next;
+	}
+	Node* n = NULL;
+	lst.change_head(n);
+	return *this;
+}
