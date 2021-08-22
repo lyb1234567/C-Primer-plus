@@ -6,10 +6,8 @@
 using namespace std;
 int main() {
     list a;
-    a.append(1);
-    a.append(10);
-    a.append(12);
-    list c = a["3:"];
-    cout << c;
+    a.append(3);
+    a.append(4);
+    cout << a.min();
     return 0;
 }

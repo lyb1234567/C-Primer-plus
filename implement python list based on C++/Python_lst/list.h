@@ -21,7 +21,6 @@ public:
 	double max();
 	double min();
 	void sort();
-	void show();
 	bool isempty() { return lst.isempty();}
 	list operator +(double n);
 	list operator -(double n);

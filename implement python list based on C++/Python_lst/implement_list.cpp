@@ -27,6 +27,50 @@ void list::remove(string s1)
 {
 	lst.remove(s1);
 }
+double list::max()
+{
+	double max;
+	Node* current = lst.get_head();
+	if (len() == 0)
+	{
+		return -1;
+	}
+	else
+	{
+		max = current->data;
+	}
+	while (current)
+	{
+		if (max<=current->data)
+		{
+			max = current->data;
+		}
+		current = current->next;
+	}
+	return max;
+}
+double list::min()
+{
+	double min;
+	Node* current = lst.get_head();
+	if (len() == 0)
+	{
+		return -1;
+	}
+	else
+	{
+		min = current->data;
+	}
+	while (current)
+	{
+		if (min >= current->data)
+		{
+			min = current->data;
+		}
+		current = current->next;
+	}
+	return min;
+}
 list list::operator+(double n) 
 {
 	lst.add_number(n);
