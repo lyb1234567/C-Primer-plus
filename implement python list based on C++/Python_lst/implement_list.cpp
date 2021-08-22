@@ -45,6 +45,10 @@ double list::max()
 		{
 			max = current->data;
 		}
+		if (current->data == NULL)
+		{
+			throw "'<' not supported between instances of 'str' and 'int'";
+		}
 		current = current->next;
 	}
 	return max;
@@ -66,6 +70,10 @@ double list::min()
 		if (min >= current->data)
 		{
 			min = current->data;
+		}
+		if (current->data == NULL)
+		{
+			throw "'<' not supported between instances of 'str' and 'int'";
 		}
 		current = current->next;
 	}
@@ -99,7 +107,6 @@ list operator+( list& l1, list &l2)
 	l1.lst.merge(l2.lst);
 	return l1;
 }
-
 int list::operator[](int index)
 {
 	

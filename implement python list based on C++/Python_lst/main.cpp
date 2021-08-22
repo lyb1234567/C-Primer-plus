@@ -8,6 +8,7 @@ int main() {
     list a;
     a.append(3);
     a.append(4);
-    cout << a.min();
+    a.append("s");
+    cout << a.max();
     return 0;
 }
