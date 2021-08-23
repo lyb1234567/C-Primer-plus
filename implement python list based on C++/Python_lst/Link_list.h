@@ -14,6 +14,7 @@ class Link_list {
 private:
     Node* head = NULL;
 public:
+    int fun(int n);
     int len();
     bool isempty();
     void str_list(string str);

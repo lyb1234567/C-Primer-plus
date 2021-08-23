@@ -1,13 +1,14 @@
-﻿#include"list.h"
-#include"Link_list.h"
 #include<iostream>
+#include"Link_list.h"
 #include<string>
-#include <cstddef>
-using namespace std;
-int main() {
-    list a;
-    a.append(3);
-    a.append(2);
-    a.sort();
-    cout << a;
+#include"list.h"
+
+int main()
+{
+	list a;
+	a.append(3);
+	a.append(4);
+	cout << a;
+	return 0;
+
 }

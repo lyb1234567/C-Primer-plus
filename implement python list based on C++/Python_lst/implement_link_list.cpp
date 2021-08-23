@@ -2,6 +2,11 @@
 #include<iostream>
 #include<string>
 using namespace std;
+
+int  Link_list::fun(int n)
+{
+	return n;
+}
 int Link_list::len()
 {
     int i = 0;
@@ -18,23 +23,23 @@ void Link_list::print_list() {
     Node* temp = head;
     while (temp != NULL) 
     {
-        if (temp->str == " " and temp->next != NULL)
+        if (temp->str == " " && temp->next != NULL)
         {
             cout << temp->data << ",";
         }
-        else if (temp->data == NULL and temp->next!=NULL)
+        else if ((temp->data == NULL) && temp->next!=NULL)
         {
             cout << temp->str << ",";
         }
-        else if (temp->str == " " and temp->next == NULL)
+        else if (temp->str == " " && temp->next == NULL)
         {
              cout << temp->data;
         }
-        else if (temp->data == NULL and temp->next == NULL)
+        else if (temp->data == NULL && temp->next == NULL)
         {
             cout << temp->str;
         }
-        temp = temp->next;
+        temp = temp->next;;
     }
     cout << "]";
 }
@@ -152,12 +157,12 @@ bool Link_list::remove(double a)
     else
     {
         Node* temp = head;
-        if (len() == 1 and temp->data==a)
+        if (len() == 1 && temp->data==a)
         {
             head= NULL;
             return true;
         }
-        else if (len() == 1 and head->data != a)
+        else if (len() == 1 && head->data != a)
         { 
             return false;
         }
@@ -198,12 +203,12 @@ bool Link_list::remove(string str)
     else
     {
         Node* temp = head;
-        if (len() == 1 and head->str == str)
+        if (len() == 1 && head->str == str)
         {
             head->next = NULL;
             return true;
         }
-        else if (len() == 1 and head->str != str)
+        else if (len() == 1 && head->str != str)
         {
             return false;
         }
@@ -251,7 +256,7 @@ int  Link_list::find_nth(int n)
         int l = len() - 1;
         Node* current = head;
         int position = n-1;
-        if (position < 0 or position > l)
+        if (position < 0 || position > l)
         {
             return -1;
         }
