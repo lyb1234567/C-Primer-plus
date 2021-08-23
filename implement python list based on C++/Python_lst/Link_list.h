@@ -34,6 +34,9 @@ public:
     int find_nth(int n);
     int search(double n);
     int search(string str);
+    void remove_duplix();
+    int count(double n);
+    int count(string str);
 
 };
 #endif // !LINK_H_H

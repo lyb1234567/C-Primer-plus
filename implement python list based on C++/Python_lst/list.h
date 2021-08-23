@@ -32,6 +32,8 @@ public:
 	int operator[](int index);
 	list operator[](const char *str);
 	double pop();
+	int count(int n);
+	int count(string n);
 
 };
 

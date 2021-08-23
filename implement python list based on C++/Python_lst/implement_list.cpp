@@ -3,6 +3,8 @@
 #include<iostream>
 #include<string>
 #include<cctype>
+#include <map>
+#include <cassert>
 using namespace std;
 list::list()
 {
@@ -178,4 +180,12 @@ double list::pop()
 	double a = lst.find_nth(n + 1);
 	lst.remove(a);
 	return a;
+}
+int list::count(int n)
+{
+	return lst.count(n);
+}
+int list::count(string n)
+{
+	return lst.count(n);
 }

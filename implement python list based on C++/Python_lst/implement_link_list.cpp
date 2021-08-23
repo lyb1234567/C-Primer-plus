@@ -1,6 +1,8 @@
 #include"Link_list.h"
 #include<iostream>
 #include<string>
+#include<map>
+
 using namespace std;
 
 int  Link_list::fun(int n)
@@ -323,4 +325,85 @@ int Link_list::search(string str)
         return -1;
     }
 }
+void Link_list::remove_duplix()
+{
+    if (isempty())
+    {
+        return;
+    }
+    if (head->next == NULL)
+    {
+        return;
+    }
+    else
+    {
+        Node* outer = head;
+        while (outer)
+        {
+            Node* inner = outer;
+            while (inner)
+            {
+                if (inner->next != NULL)
+                {
+                    if (inner->next->data == outer->data)
+                    {
+                        inner->next = inner->next->next;
+                    }
+                    else
+                    {
+                        inner = inner->next;
+                    }
+                }
+                else
+                {
+                    inner = inner->next;
+                }
+            }
+            outer = outer->next;
+        }
+    }
+}
+int Link_list::count(double n)
+{
+    map<int, int> b;
+    Link_list l2 = *this;
+    Node* temp = head;
+    while (temp)
+    {
+        b[temp->data] = 0;
+        temp = temp->next;
+    }
+    Node* current = l2.head;
+    while (current)
+    {
+        if (b.find(current->data) != b.end())
+        {
+            b[current->data] = b[current->data] + 1;
+        }
+        current = current->next;
+    }
+    return b[n];
+    
+}
+int Link_list::count(string str)
+{
+    map<string, int> b;
+    Link_list l2 = *this;
+    Node* temp = head;
+    while (temp)
+    {
+        b[temp->str] = 0;
+        temp = temp->next;
+    }
+    Node* current = l2.head;
+    while (current)
+    {
+        if (b.find(current->str) != b.end())
+        {
+            b[current->str] = b[current->str] + 1;
+        }
+        current = current->next;
+    }
+    return b[str];
 
+}

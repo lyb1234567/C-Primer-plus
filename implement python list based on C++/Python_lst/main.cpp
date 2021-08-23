@@ -2,19 +2,16 @@
 #include"Link_list.h"
 #include<string>
 #include"list.h"
-
+#include <map>
+#include <iostream>
+#include <cassert>
 int main()
 {
+	using namespace std;
 	list a;
-	for (int i = 0; i < 5; i++)
-	{
-		a.append(i);
-	}
-	cout << a << endl;
-	int b = a.len();
-	for (int i = 0; i < b; i++)
-	{
-		cout << a.pop() << endl;
-	}
-	cout << a;
+	a.append(5);
+	a.append(7);
+	a.append(5);
+	cout << a.count(5);
+	return 0;
 }

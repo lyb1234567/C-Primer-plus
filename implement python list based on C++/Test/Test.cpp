@@ -88,5 +88,18 @@ namespace Test
 			a.append(2);
 			Assert::AreEqual(2.0, a.pop());
 		}
+		TEST_METHOD(pop)
+		{
+			list a;
+			a.append(3);
+			a.append(4);
+			a.append(4);
+			a.append("s");
+			a.append("s");
+			a.append(1);
+			a.append(2);
+			Assert::AreEqual(2, a.count("s"));
+			Assert::AreEqual(2, a.count(4));
+		}
 	};
 }
