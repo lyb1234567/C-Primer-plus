@@ -7,8 +7,7 @@ using namespace std;
 int main() {
     list a;
     a.append(3);
-    a.append(4);
-    a.append("s");
-    cout << a.max();
-    return 0;
+    a.append(2);
+    a.sort();
+    cout << a;
 }

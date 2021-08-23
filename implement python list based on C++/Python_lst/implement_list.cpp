@@ -27,6 +27,34 @@ void list::remove(string s1)
 {
 	lst.remove(s1);
 }
+void list::sort()
+{
+	Node* current = lst.get_head();
+	Node* index;
+	double temp;
+	if (len() == 0)
+	{
+		throw "The list is empty!!";
+	}
+	else
+	{
+		while (current)
+		{
+			index = current->next;
+			while (index)
+			{
+				if (current->data > index->data)
+				{
+					temp = current->data;
+					current->data = index->data;
+					index->data = temp;
+				}
+				index = index->next;
+			}
+			current = current->next;
+		}
+	}
+}
 double list::max()
 {
 	double max;
