@@ -1,4 +1,5 @@
-﻿#include"list.h"
+﻿#include"Link_list.h"
+#include"list.h"
 #include<iostream>
 #include<string>
 #include<cctype>
@@ -7,7 +8,7 @@ list::list()
 {
 	
 }
-list::list(  string str)
+list::list( string str)
 {
 	lst.str_list(str);
 }
@@ -170,4 +171,11 @@ list list::operator[](const char * str)
 	Node* n = NULL;
 	lst.change_head(n);
 	return *this;
+}
+double list::pop()
+{
+	int n = len() - 1;
+	double a = lst.find_nth(n + 1);
+	lst.remove(a);
+	return a;
 }

@@ -8,6 +8,7 @@ class list
 {
 private:
 	Link_list lst;
+	string str;
 public:
 	list();
 	list( string str);
@@ -30,6 +31,7 @@ public:
     friend list operator -(double n,  list& lst1);
 	int operator[](int index);
 	list operator[](const char *str);
+	double pop();
 
 };
 

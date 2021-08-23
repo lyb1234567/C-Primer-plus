@@ -6,9 +6,15 @@
 int main()
 {
 	list a;
-	a.append(3);
-	a.append(4);
+	for (int i = 0; i < 5; i++)
+	{
+		a.append(i);
+	}
+	cout << a << endl;
+	int b = a.len();
+	for (int i = 0; i < b; i++)
+	{
+		cout << a.pop() << endl;
+	}
 	cout << a;
-	return 0;
-
 }

@@ -30,7 +30,6 @@ namespace Test
 			list a;
 			a.append(3);
 			a.append(4);
-
 			Assert::AreEqual(4, a[1]);
 		}
 		TEST_METHOD(add)
@@ -79,6 +78,15 @@ namespace Test
 			a.append(2);
 			Assert::AreEqual(1.0, a.min());
 			Assert::AreEqual(4.0, a.max());
+		}
+		TEST_METHOD(pop)
+		{
+			list a;
+			a.append(3);
+			a.append(4);
+			a.append(1);
+			a.append(2);
+			Assert::AreEqual(2.0, a.pop());
 		}
 	};
 }
