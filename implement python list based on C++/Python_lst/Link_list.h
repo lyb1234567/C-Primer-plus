@@ -3,25 +3,32 @@
 #include<iostream>
 #include<string>
 using namespace std;
+class Link_list;
 class Node {
 public:
     double data = NULL;
     string str = " ";
     Node* next = NULL;
+    Link_list* link;
 };
 class Link_list {
     
 private:
     Node* head = NULL;
+
 public:
+    Link_list();
+    Link_list(const Link_list& lst);
     int fun(int n);
     int len();
     bool isempty();
     void str_list(string str);
     void push_head(double new_data);
     void push_head(string new_str);
+    void push_head(const Node& e);
     void push_tail( double new_data);
     void push_tail(string new_str);
+
     void change_head(Node* n) { head = n; };
     void reverse();
     Node* get_head() { return head; };
@@ -37,6 +44,7 @@ public:
     void remove_duplix();
     int count(double n);
     int count(string str);
+
 
 };
 #endif // !LINK_H_H

@@ -5,6 +5,14 @@
 
 using namespace std;
 
+Link_list::Link_list()
+{
+    head = NULL;
+}
+Link_list::Link_list(const Link_list& lst)
+{
+    *this = lst;
+}
 int  Link_list::fun(int n)
 {
 	return n;
@@ -25,23 +33,32 @@ void Link_list::print_list() {
     Node* temp = head;
     while (temp != NULL) 
     {
-        if (temp->str == " " && temp->next != NULL)
+        if (temp->str == " " &&!(temp->link) && temp->next != NULL)
         {
             cout << temp->data << ",";
         }
-        else if ((temp->data == NULL) && temp->next!=NULL)
+        else if (temp->data == NULL && !(temp->link)&& temp->next!=NULL)
         {
             cout << temp->str << ",";
         }
-        else if (temp->str == " " && temp->next == NULL)
+        else if (temp->str == " " && !(temp->link)&& temp->next == NULL)
         {
              cout << temp->data;
         }
-        else if (temp->data == NULL && temp->next == NULL)
+        else if (temp->data == NULL && !(temp->link) && temp->next == NULL)
         {
             cout << temp->str;
         }
-        temp = temp->next;;
+        if (temp->data==NULL && temp->str==" " && temp->link && temp->next != NULL)
+        {
+            temp->link->print_list();
+            cout << ",";
+        }
+        else if (temp->data == NULL && temp->str == " " && temp->link && temp->next == NULL)
+        {
+            temp->link->print_list();
+        }
+        temp = temp->next;
     }
     cout << "]";
 }
@@ -58,6 +75,44 @@ void Link_list::push_head( string new_str)
     new_node->str = new_str;
     new_node->next = head;
     head = new_node;
+}
+void Link_list::push_head(const Node & e)
+{
+    Node* new_node = new Node();
+    if (head == NULL)
+    {
+        head = new Node();
+        if (e.link )
+        {
+            head->link = new Link_list(*e.link);
+        }
+        if(e.data!=NULL)
+        {
+            head->data = e.data;
+        }
+        if (e.str != " ")
+        {
+            head->str = e.str;
+        }
+        
+    }
+    else
+    {
+        Node* ptr = new Node();
+        if (e.link) {
+            ptr->link = new Link_list(*e.link);
+        }
+        if (e.data != NULL)
+        {
+            ptr->data = e.data;
+        }
+         if (e.str != " ")
+        {
+            ptr->str = e.str;
+        }
+         ptr->next = head;
+         head = ptr;
+    }
 }
 void Link_list::push_tail( double new_data)
 {
