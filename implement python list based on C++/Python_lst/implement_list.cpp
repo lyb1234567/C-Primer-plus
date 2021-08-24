@@ -189,3 +189,14 @@ int list::count(string n)
 {
 	return lst.count(n);
 }
+void list::clear()
+{
+	int a = len();
+	Node* temp = lst.get_head();
+	while (temp)
+	{
+		temp = temp->next;
+		lst.change_head(temp);
+	}
+
+}

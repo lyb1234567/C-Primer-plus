@@ -12,6 +12,7 @@ int main()
 	a.append(5);
 	a.append(7);
 	a.append(5);
-	cout << a.count(5);
+	a.clear();
+	cout << a;
 	return 0;
 }

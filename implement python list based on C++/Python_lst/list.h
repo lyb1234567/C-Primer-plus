@@ -34,6 +34,7 @@ public:
 	double pop();
 	int count(int n);
 	int count(string n);
+	void clear();
 
 };
 
