@@ -1,4 +1,5 @@
 #include"Link_list.h"
+#include"list.h"
 #include<iostream>
 #include<string>
 #include<map>
@@ -76,42 +77,19 @@ void Link_list::push_head( string new_str)
     new_node->next = head;
     head = new_node;
 }
-void Link_list::push_head(const Node & e)
+void Link_list::push_head(const Link_list& lst)
 {
-    Node* new_node = new Node();
     if (head == NULL)
     {
         head = new Node();
-        if (e.link )
-        {
-            head->link = new Link_list(*e.link);
-        }
-        if(e.data!=NULL)
-        {
-            head->data = e.data;
-        }
-        if (e.str != " ")
-        {
-            head->str = e.str;
-        }
-        
+        head->link = new Link_list(lst);        
     }
     else
     {
         Node* ptr = new Node();
-        if (e.link) {
-            ptr->link = new Link_list(*e.link);
-        }
-        if (e.data != NULL)
-        {
-            ptr->data = e.data;
-        }
-         if (e.str != " ")
-        {
-            ptr->str = e.str;
-        }
-         ptr->next = head;
-         head = ptr;
+        ptr->link = new Link_list(lst);
+        ptr->next = head;
+        head = ptr;
     }
 }
 void Link_list::push_tail( double new_data)
@@ -141,6 +119,25 @@ void Link_list::push_tail( string new_str)
     if (head == NULL)
     {
         push_head( new_str);
+    }
+    else
+    {
+        Node* p = head;
+        while (p->next != NULL)
+        {
+            p = p->next;
+        }
+        p->next = temp;
+    }
+}
+void Link_list::push_tail(const Link_list& lst)
+{
+    Node* temp = new Node();
+    temp->link = new Link_list(lst);
+    temp->next = NULL;
+    if (head == NULL)
+    {
+        push_head(lst);
     }
     else
     {
@@ -300,41 +297,6 @@ bool Link_list::remove(string str)
 bool Link_list::isempty()
 {
     return (len() == 0);
-}
-int  Link_list::find_nth(int n)
-{
-    if (len() == 0)
-    {
-        return -1;
-    }
-    else
-    {
-
-        int l = len() - 1;
-        Node* current = head;
-        int position = n-1;
-        if (position < 0 || position > l)
-        {
-            return -1;
-        }
-        int count = 0;
-        while (count != position)
-        {
-            current = current->next;
-            count = count + 1;
-        }
-        if (current != NULL)
-        {
-          
-
-                return current->data;
-
-        }
-        else 
-        {
-            return -1;
-        }
-    }
 }
 int Link_list::search(double n)
 {

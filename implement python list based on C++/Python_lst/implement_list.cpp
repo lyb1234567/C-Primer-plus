@@ -22,6 +22,10 @@ void list::append(string s1)
 {
 	lst.push_tail(s1);
 }
+void list::append(const list& a)
+{
+	lst.push_tail(a.lst);
+}
 void list::remove(double n)
 {
 	lst.remove(n);
@@ -137,12 +141,6 @@ list operator+( list& l1, list &l2)
 {
 	l1.lst.merge(l2.lst);
 	return l1;
-}
-int list::operator[](int index)
-{
-	
-	return lst.find_nth(index + 1);
-	
 }
 int list::index(double n)
 {

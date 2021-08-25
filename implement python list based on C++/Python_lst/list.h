@@ -15,6 +15,7 @@ public:
 	int len() { return lst.len(); }
 	void append(double n);
 	void append( string s);
+	void append(const list& a);
 	void  remove(double n);
 	void  remove(string s);
 	int index(double n);
@@ -29,7 +30,10 @@ public:
 	friend list operator+(list& l1, list& l2);
 	friend list operator +(double n,  list& lst1);
     friend list operator -(double n,  list& lst1);
-	int operator[](int index);
+	int operator[](int index)
+	{
+	 return lst.find_nth(index + 1);
+	}
 	list operator[](const char *str);
 	double pop();
 	int count(int n);

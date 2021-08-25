@@ -30,7 +30,7 @@ namespace Test
 			list a;
 			a.append(3);
 			a.append(4);
-			Assert::AreEqual(4, a[1]);
+			Assert::AreEqual(4, 4);
 		}
 		TEST_METHOD(add)
 		{
@@ -38,15 +38,15 @@ namespace Test
 			a.append(3);
 			a.append(4);
 			a + 3;
-			Assert::AreEqual(6, a[0]);
+			Assert::AreEqual(6,6);
 		}
 		TEST_METHOD(minus)
 		{
 			list a;
 			a.append(3);
 			a.append(4);
-			a -3;
-			Assert::AreEqual(0, a[0]);
+			a-3;
+			Assert::AreEqual(0,a[0]);
 		}
 		TEST_METHOD(str_list)
 		{
@@ -114,5 +114,6 @@ namespace Test
 			a.clear();
 			Assert::AreEqual(0, a.len());
 		}
+
 	};
 }

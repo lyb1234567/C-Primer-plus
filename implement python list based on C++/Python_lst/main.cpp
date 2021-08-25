@@ -8,18 +8,18 @@
 int main()
 {
 	using namespace std;
-	Link_list b;
-	b.push_tail(5);
-	b.push_tail("s");
-	b.push_head(6);
 	Link_list a;
-	Node c;
-	int l = NULL;
-	c.link = &b;
-	a.push_head(c);
-	//a.push_tail(3);
-	//a.push_head(4);
-	Node* _head = a.get_head();
-	_head->link->print_list();
+	int g = 1;
+	Link_list b;
+	Link_list c;
+	c.push_head(5);
+	c.push_tail(6);
+	b.push_tail(c);
+	b.push_tail(3);
+	b.push_tail(4);
+	a.push_tail(b);
+	a.push_tail(3);
 	a.print_list();
+	return 0;
+
 }
