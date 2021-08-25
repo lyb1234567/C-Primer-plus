@@ -1,6 +1,3 @@
-﻿  implement_link_list.cpp
-C:\Users\admin\Desktop\学习\C++\C-primer-plus\implement python list based on C++\Python_lst\implement_link_list.cpp(131,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\admin\Desktop\学习\C++\C-primer-plus\implement python list based on C++\Python_lst\implement_link_list.cpp(273,31): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-C:\Users\admin\Desktop\学习\C++\C-primer-plus\implement python list based on C++\Python_lst\implement_link_list.cpp(196): warning C4715: 'Link_list::remove': not all control paths return a value
-C:\Users\admin\Desktop\学习\C++\C-primer-plus\implement python list based on C++\Python_lst\implement_link_list.cpp(242): warning C4715: 'Link_list::remove': not all control paths return a value
+﻿  main.cpp
+C:\Users\admin\Desktop\学习\C++\C-primer-plus\implement python list based on C++\Python_lst\Link_list.h(68,27): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
   Python_lst.vcxproj -> C:\Users\admin\Desktop\学习\C++\C-primer-plus\implement python list based on C++\Python_lst\Debug\Python_lst.exe

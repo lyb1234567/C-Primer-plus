@@ -2,9 +2,9 @@
 
 ### Methods
 
-- [len()](#len())
-- [isempty()](#isempty())
-- [str_list()](#str_list())
+- [len()](#len)
+- [isempty()](#isempty)
+- [str_list()](str_list)
 - push_head()
 - push_tail()
 - change_head()

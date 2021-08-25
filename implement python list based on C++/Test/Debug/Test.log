@@ -1,6 +1,12 @@
 ﻿  Test.cpp
-C:\Users\admin\Desktop\学习\C++\C-primer-plus\implement python list based on C++\Python_lst\implement_link_list.cpp(131,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\admin\Desktop\学习\C++\C-primer-plus\implement python list based on C++\Python_lst\implement_link_list.cpp(273,31): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-C:\Users\admin\Desktop\学习\C++\C-primer-plus\implement python list based on C++\Python_lst\implement_link_list.cpp(196): warning C4715: 'Link_list::remove': not all control paths return a value
-C:\Users\admin\Desktop\学习\C++\C-primer-plus\implement python list based on C++\Python_lst\implement_link_list.cpp(242): warning C4715: 'Link_list::remove': not all control paths return a value
+C:\Users\admin\Desktop\学习\C++\C-primer-plus\implement python list based on C++\Python_lst\implement_link_list.cpp(133,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\admin\Desktop\学习\C++\C-primer-plus\implement python list based on C++\Python_lst\implement_link_list.cpp(275,31): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+C:\Users\admin\Desktop\学习\C++\C-primer-plus\implement python list based on C++\Python_lst\implement_link_list.cpp(373,15): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\admin\Desktop\学习\C++\C-primer-plus\implement python list based on C++\Python_lst\implement_link_list.cpp(379,27): warning C4244: 'argument': conversion from 'double' to 'const int', possible loss of data
+C:\Users\admin\Desktop\学习\C++\C-primer-plus\implement python list based on C++\Python_lst\implement_link_list.cpp(381,22): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\admin\Desktop\学习\C++\C-primer-plus\implement python list based on C++\Python_lst\implement_link_list.cpp(381,41): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\admin\Desktop\学习\C++\C-primer-plus\implement python list based on C++\Python_lst\implement_link_list.cpp(385,14): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\admin\Desktop\学习\C++\C-primer-plus\implement python list based on C++\Python_lst\implement_link_list.cpp(198): warning C4715: 'Link_list::remove': not all control paths return a value
+C:\Users\admin\Desktop\学习\C++\C-primer-plus\implement python list based on C++\Python_lst\implement_link_list.cpp(244): warning C4715: 'Link_list::remove': not all control paths return a value
+     Creating library C:\Users\admin\Desktop\??\C++\C-primer-plus\implement python list based on C++\Python_lst\Debug\Test.lib and object C:\Users\admin\Desktop\??\C++\C-primer-plus\implement python list based on C++\Python_lst\Debug\Test.exp
   Test.vcxproj -> C:\Users\admin\Desktop\学习\C++\C-primer-plus\implement python list based on C++\Python_lst\Debug\Test.dll
