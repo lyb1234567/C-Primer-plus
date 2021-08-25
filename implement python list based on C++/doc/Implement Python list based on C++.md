@@ -18,7 +18,7 @@
 
 ### Used class:
 
-- Node
-- Linked list
-- list
+- [Node](https://github.com/lyb1234567/C-plus-plus-/blob/master/implement%20python%20list%20based%20on%20C%2B%2B/doc/Node.md)
+- [Linked list](https://github.com/lyb1234567/C-plus-plus-/blob/master/implement%20python%20list%20based%20on%20C%2B%2B/doc/Linked%20list%20Class.md)
+- [list](https://github.com/lyb1234567/C-plus-plus-/blob/master/implement%20python%20list%20based%20on%20C%2B%2B/doc/List.md)
 
