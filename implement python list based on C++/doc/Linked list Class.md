@@ -2,7 +2,7 @@
 
 ### Methods
 
-- len()
+- [len()](len())
 - isempty()
 - str_list()
 - push_head()
