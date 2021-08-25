@@ -2,7 +2,7 @@
 
 ### Methods
 
-- [len()](len())
+- [len()](#len())
 - isempty()
 - str_list()
 - push_head()
@@ -19,5 +19,5 @@
 
 
 
-[len()](#len())
+### len()
 
