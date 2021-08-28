@@ -114,6 +114,27 @@ namespace Test
 			a.clear();
 			Assert::AreEqual(0, a.len());
 		}
+		TEST_METHOD(equal_test)
+		{
+			list a;
+			list b;
+			a.append(5);
+			a.append(6);
+			b.append(4);
+			int i = (a == b);
+			Assert::AreEqual(0, i);
+		}
+		TEST_METHOD(copy_test)
+		{
+			list a;
+			list b;
+			a.append(5);
+			a.append(6);
+			b.append(4);
+			b = a.copy();
+			int i = (b == a);
+			Assert::AreEqual(1, i);
+		}
 
 	};
 }

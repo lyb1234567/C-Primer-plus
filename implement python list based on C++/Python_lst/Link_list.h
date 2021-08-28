@@ -36,55 +36,9 @@ public:
     bool remove( string str);
     void add_number(double n);
     void minus_number(double n);
-    void print_list();
+    void print_list() const;
     void merge(Link_list& lst);
-    auto find_nth(int n)
-    {
-        if (len() == 0)
-        {
-            return -1;
-        }
-        else
-        {
-
-            int l = len() - 1;
-            Node* current = head;
-            int position = n - 1;
-            if (position < 0 || position > l)
-            {
-                return -1;
-            }
-            int count = 0;
-            while (count != position)
-            {
-                current = current->next;
-                count = count + 1;
-            }
-            if (current != NULL)
-            {
-
-                if (current->data != NULL)
-                {
-                    int a = current->data;
-                    return a;
-                }
-                //else if (current->data == NULL && current->str != " ")
-                //{
-                //    string a = current->str;
-                //    return a;
-                //}
-                //else if (current->data == NULL && current->str == " " && current->link)
-                //{
-                //    return current->link;
-                //}
-
-            }
-            else
-            {
-                return -1;
-            }
-        }
-    }
+    int find_nth(int n);
     int search(double n);
     int search(string str);
     void remove_duplix();

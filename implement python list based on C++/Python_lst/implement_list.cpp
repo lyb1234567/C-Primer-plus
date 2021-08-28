@@ -6,14 +6,6 @@
 #include <map>
 #include <cassert>
 using namespace std;
-list::list()
-{
-	
-}
-list::list( string str)
-{
-	lst.str_list(str);
-}
 void list:: append(double n)
 {
 	lst.push_tail(n);
@@ -114,6 +106,50 @@ double list::min()
 	}
 	return min;
 }
+int list::index(double n)
+{
+	int a=lst.search(n);
+	return a;
+}
+int list::index(string str)
+{
+	int a = lst.search(str);
+	return a;
+}
+double list::pop()
+{
+	int n = len() - 1;
+	double a = lst.find_nth(n + 1);
+	lst.remove(a);
+	return a;
+}
+int list::count(int n)
+{
+	return lst.count(n);
+}
+int list::count(string n)
+{
+	return lst.count(n);
+}
+void list::clear()
+{
+	int a = len();
+	Node* temp = lst.get_head();
+	while (temp)
+	{
+		temp = temp->next;
+		lst.change_head(temp);
+	}
+
+}
+list::list()
+{
+	
+}
+list::list( string str)
+{
+	lst.str_list(str);
+}
 list list::operator+(double n) 
 {
 	lst.add_number(n);
@@ -142,15 +178,37 @@ list operator+( list& l1, list &l2)
 	l1.lst.merge(l2.lst);
 	return l1;
 }
-int list::index(double n)
+bool list::operator ==(list& l)
 {
-	int a=lst.search(n);
-	return a;
+	Node* temp1 = this->lst.get_head();
+	Node* temp2 = l.lst.get_head();
+	if (this->lst.len() != l.lst.len())
+	{
+		return false;
+	}
+	while (temp1 && temp2)
+	{
+		if (temp1->data != temp2->data)
+		{
+			return false;
+		}
+	    if (temp1->str != temp2->str)
+		{
+			return false;
+		}
+		temp1 = temp1->next;
+		temp2 = temp2->next;
+	}
+	return true;
 }
-int list::index(string str)
+list& list::operator=(const list& l)
 {
-	int a = lst.search(str);
-	return a;
+	this->lst = l.lst;
+	return *this;
+}
+list list::copy()
+{
+	return *this;
 }
 list list::operator[](const char * str)
 {
@@ -171,30 +229,4 @@ list list::operator[](const char * str)
 	Node* n = NULL;
 	lst.change_head(n);
 	return *this;
-}
-double list::pop()
-{
-	int n = len() - 1;
-	double a = lst.find_nth(n + 1);
-	lst.remove(a);
-	return a;
-}
-int list::count(int n)
-{
-	return lst.count(n);
-}
-int list::count(string n)
-{
-	return lst.count(n);
-}
-void list::clear()
-{
-	int a = len();
-	Node* temp = lst.get_head();
-	while (temp)
-	{
-		temp = temp->next;
-		lst.change_head(temp);
-	}
-
 }

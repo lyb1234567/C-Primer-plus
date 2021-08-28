@@ -36,10 +36,12 @@ public:
 	}
 	list operator[](const char *str);
 	double pop();
+	list copy();
 	int count(int n);
 	int count(string n);
 	void clear();
-
+	list& operator =(const list& l);
+	bool operator ==( list& l);
 };
 
 #endif // !LIST_H_

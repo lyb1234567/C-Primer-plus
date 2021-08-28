@@ -29,7 +29,7 @@ int Link_list::len()
     }
     return i;
 }
-void Link_list::print_list() {
+void Link_list::print_list()const  {
     cout << "[";
     Node* temp = head;
     while (temp != NULL) 
@@ -377,6 +377,45 @@ void Link_list::remove_duplix()
                 }
             }
             outer = outer->next;
+        }
+    }
+}
+int Link_list::find_nth(int n)
+{
+    if (len() == 0)
+    {
+        return -1;
+    }
+    else
+    {
+
+        int l = len() - 1;
+        Node* current = head;
+        int position = n - 1;
+        if (position < 0 || position > l)
+        {
+            return -1;
+        }
+        int count = 0;
+        while (count != position)
+        {
+            current = current->next;
+            count = count + 1;
+        }
+        if (current != NULL)
+        {
+            if (current->data == NULL)
+            {
+                return 0;
+            }
+            if (current->data != NULL)
+            {
+                return current->data;
+            }
+        }
+        else
+        {
+            return -1;
         }
     }
 }

@@ -8,18 +8,15 @@
 int main()
 {
 	using namespace std;
-	Link_list a;
-	int g = 1;
-	Link_list b;
-	Link_list c;
-	c.push_head(5);
-	c.push_tail(6);
-	b.push_tail(c);
-	b.push_tail(3);
-	b.push_tail(4);
-	a.push_tail(b);
-	a.push_tail(3);
-	a.print_list();
+	list a;
+	list b;
+	a.append(1);
+	a.append(4);
+	a.append(5);
+	a.append(6);
+	a - 1;
+	b = a.copy();
+	cout << b;
 	return 0;
 
 }
