@@ -14,9 +14,9 @@ int main()
 	a.append(4);
 	a.append(5);
 	a.append(6);
-	a - 1;
-	b = a.copy();
-	cout << b;
+	b.append("s");
+	b.append("c");
+	cout << (a != b);
 	return 0;
 
 }

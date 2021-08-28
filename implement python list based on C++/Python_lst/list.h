@@ -27,6 +27,7 @@ public:
 	list operator +(double n);
 	list operator -(double n);
 	friend ostream& operator <<(ostream& os, list& lst);
+	friend ostream& operator<<(ostream& os, list[]);
 	friend list operator+(list& l1, list& l2);
 	friend list operator +(double n,  list& lst1);
     friend list operator -(double n,  list& lst1);
@@ -41,7 +42,8 @@ public:
 	int count(string n);
 	void clear();
 	list& operator =(const list& l);
-	bool operator ==( list& l);
+	string operator ==( list& l);
+	string operator !=(list& l);
 };
 
 #endif // !LIST_H_

@@ -173,33 +173,61 @@ ostream& operator <<(ostream& os,   list& lst1)
 	lst1.lst.print_list();
 	return os;
  }
+ostream& operator <<(ostream& os, list [])
+{
+	cout << "sb";
+	return os;
+}
 list operator+( list& l1, list &l2) 
 {
 	l1.lst.merge(l2.lst);
 	return l1;
 }
-bool list::operator ==(list& l)
+string list::operator ==(list& l)
 {
 	Node* temp1 = this->lst.get_head();
 	Node* temp2 = l.lst.get_head();
 	if (this->lst.len() != l.lst.len())
 	{
-		return false;
+		return "False";
 	}
 	while (temp1 && temp2)
 	{
 		if (temp1->data != temp2->data)
 		{
-			return false;
+			return "False";
 		}
 	    if (temp1->str != temp2->str)
 		{
-			return false;
+			return "False";
 		}
 		temp1 = temp1->next;
 		temp2 = temp2->next;
 	}
-	return true;
+	return "True";
+}
+string list::operator !=(list& l)
+{
+	Node* temp1 = this->lst.get_head();
+	Node* temp2 = l.lst.get_head();
+	if (this->lst.len() != l.lst.len())
+	{
+		return "True";
+	}
+	while (temp1 && temp2)
+	{
+		if (temp1->data != temp2->data)
+		{
+			return "True";
+		}
+		if (temp1->str != temp2->str)
+		{
+			return "True";
+		}
+		temp1 = temp1->next;
+		temp2 = temp2->next;
+	}
+	return "False";
 }
 list& list::operator=(const list& l)
 {

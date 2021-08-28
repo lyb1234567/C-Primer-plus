@@ -121,8 +121,17 @@ namespace Test
 			a.append(5);
 			a.append(6);
 			b.append(4);
-			int i = (a == b);
-			Assert::AreEqual(0, i);
+			string i = (a == b);
+			int h;
+			if (i == "True")
+			{
+				h = 1;
+			}
+			else if (i == "False")
+			{
+				h = 0;
+			}
+			Assert::AreEqual(0, h);
 		}
 		TEST_METHOD(copy_test)
 		{
@@ -131,9 +140,36 @@ namespace Test
 			a.append(5);
 			a.append(6);
 			b.append(4);
-			b = a.copy();
-			int i = (b == a);
-			Assert::AreEqual(1, i);
+			string i = (a == b);
+			int h;
+			if (i == "True")
+			{
+				h = 1;
+			}
+			else if (i == "False")
+			{
+				h = 0;
+			}
+			Assert::AreEqual(0, h);
+		}
+		TEST_METHOD(not_equal)
+		{
+			list a;
+			list b;
+			a.append(5);
+			a.append(6);
+			b.append(4);
+			string i = (a != b);
+			int h;
+			if (i == "True")
+			{
+				h = 1;
+			}
+			else if (i == "False")
+			{
+				h = 0;
+			}
+			Assert::AreEqual(1, h);
 		}
 
 	};
