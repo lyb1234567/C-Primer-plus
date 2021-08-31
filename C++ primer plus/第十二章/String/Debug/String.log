@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\Users\admin\Desktop\学习\C++\C-primer-plus\C++ primer plus\第十二章\String\main.cpp(16,9): warning C4101: 'i': unreferenced local variable
+C:\Users\admin\Desktop\学习\C++\C-primer-plus\C++ primer plus\第十二章\String\main.cpp(15,10): warning C4101: 'temp': unreferenced local variable
+main.obj : error LNK2019: unresolved external symbol "class std::basic_istream<char,struct std::char_traits<char> > & __cdecl operator>>(class std::basic_istream<char,struct std::char_traits<char> > &,class String const &)" (??5@YAAAV?$basic_istream@DU?$char_traits@D@std@@@std@@AAV01@ABVString@@@Z) referenced in function _main
+C:\Users\admin\Desktop\学习\C++\C-primer-plus\C++ primer plus\第十二章\String\Debug\String.exe : fatal error LNK1120: 1 unresolved externals
