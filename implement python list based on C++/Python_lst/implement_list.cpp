@@ -168,7 +168,12 @@ list operator-(double n,  list& lst1)
 {
 	return lst1-n;
 }
-ostream& operator <<(ostream& os,   list& lst1)
+list list ::operator +(const list& l) 
+{
+	lst.merge(l.lst);
+	return  *this;
+}
+ostream& operator <<(ostream& os,   const list& lst1)
 {
 	lst1.lst.print_list();
 	return os;
@@ -178,11 +183,11 @@ ostream& operator <<(ostream& os, list [])
 	cout << "sb";
 	return os;
 }
-list operator+( list& l1, list &l2) 
-{
-	l1.lst.merge(l2.lst);
-	return l1;
-}
+//list operator+( list& l1, list &l2) 
+//{
+//	l1.lst.merge(l2.lst);
+//	return l1;
+//}
 string list::operator ==(list& l)
 {
 	Node* temp1 = this->lst.get_head();

@@ -25,10 +25,11 @@ public:
 	void sort();
 	bool isempty() { return lst.isempty();}
 	list operator +(double n);
+	list operator +(const list& l);
 	list operator -(double n);
-	friend ostream& operator <<(ostream& os, list& lst);
+	friend ostream& operator <<(ostream& os, const list& lst);
 	friend ostream& operator<<(ostream& os, list[]);
-	friend list operator+(list& l1, list& l2);
+	//friend list operator+(list& l1, list& l2);
 	friend list operator +(double n,  list& lst1);
     friend list operator -(double n,  list& lst1);
 	int operator[](int index)

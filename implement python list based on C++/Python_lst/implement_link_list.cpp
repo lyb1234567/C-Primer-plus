@@ -40,7 +40,7 @@ void Link_list::print_list()const  {
         }
         else if (temp->data == NULL && !(temp->link)&& temp->next!=NULL)
         {
-            cout << "'" << temp->str << "'"<< ",";
+            cout << "'" << temp->str << "'" << ",";
         }
         else if (temp->str == " " && !(temp->link)&& temp->next == NULL)
         {
@@ -167,7 +167,7 @@ void Link_list::minus_number(double n)
         temp = temp->next;
     }
 }
-void Link_list::merge(Link_list& lst)
+void Link_list::merge(const Link_list& lst)
 {
     Node* temp = head;
     if (lst.head != NULL)

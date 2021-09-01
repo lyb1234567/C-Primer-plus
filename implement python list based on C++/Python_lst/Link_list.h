@@ -37,7 +37,7 @@ public:
     void add_number(double n);
     void minus_number(double n);
     void print_list() const;
-    void merge(Link_list& lst);
+    void merge( const Link_list& lst);
     int find_nth(int n);
     int search(double n);
     int search(string str);

@@ -10,16 +10,18 @@ int main()
 	using namespace std;
 	list a;
 	list b;
-	a.append(1);
-	a.append(4);
-	a.append(5);
-	a.append(6);
+	list d;
+	list e;
+	e.append("j");
+	a.append("s");
 	b.append("s");
 	b.append("c");
-	a.append(b);
-	a.append("b");
+
+	d.append(9);
 	a.append(7);
-	cout << a;
+	list c = e+a + b + d;
+	cout << c[0];
+
 	return 0;
 
 }
