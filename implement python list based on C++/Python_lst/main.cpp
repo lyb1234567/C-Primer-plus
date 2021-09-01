@@ -16,7 +16,10 @@ int main()
 	a.append(6);
 	b.append("s");
 	b.append("c");
-	cout << (a != b);
+	a.append(b);
+	a.append("b");
+	a.append(7);
+	cout << a;
 	return 0;
 
 }

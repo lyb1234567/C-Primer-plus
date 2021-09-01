@@ -40,7 +40,7 @@ void Link_list::print_list()const  {
         }
         else if (temp->data == NULL && !(temp->link)&& temp->next!=NULL)
         {
-            cout << temp->str << ",";
+            cout << "'" << temp->str << "'"<< ",";
         }
         else if (temp->str == " " && !(temp->link)&& temp->next == NULL)
         {
@@ -48,7 +48,7 @@ void Link_list::print_list()const  {
         }
         else if (temp->data == NULL && !(temp->link) && temp->next == NULL)
         {
-            cout << temp->str;
+            cout <<"'"<<temp->str<<"'";
         }
         if (temp->data==NULL && temp->str==" " && temp->link && temp->next != NULL)
         {
