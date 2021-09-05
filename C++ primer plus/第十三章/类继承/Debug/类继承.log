@@ -1,0 +1,6 @@
+﻿  main.cpp
+  类继承.cpp
+C:\Users\admin\Desktop\学习\C++\C-primer-plus\C++ primer plus\第十三章\类继承\类继承.cpp(10,1): error C2084: function 'TableTennisPlayer::TableTennisPlayer(const std::string &,const std::string &,bool)' already has a body
+C:\Users\admin\Desktop\学习\C++\C-primer-plus\C++ primer plus\第十三章\类继承\类继承.cpp(4): message : see previous definition of '{ctor}'
+C:\Users\admin\Desktop\学习\C++\C-primer-plus\C++ primer plus\第十三章\类继承\类继承.cpp(16,1): error C2264: 'TableTennisPlayer::TableTennisPlayer': error in function definition or declaration; function not called
+  Generating Code...

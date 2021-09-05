@@ -1,0 +1,8 @@
+﻿  main.cpp
+C:\Users\admin\Desktop\学习\C++\C-primer-plus\C++ primer plus\第十三章\多态\多态\main.cpp(12,7): warning C4101: 'kind': unreferenced local variable
+C:\Users\admin\Desktop\学习\C++\C-primer-plus\C++ primer plus\第十三章\多态\多态\main.cpp(11,9): warning C4101: 'tempbal': unreferenced local variable
+C:\Users\admin\Desktop\学习\C++\C-primer-plus\C++ primer plus\第十三章\多态\多态\main.cpp(10,7): warning C4101: 'tempnum': unreferenced local variable
+C:\Users\admin\Desktop\学习\C++\C-primer-plus\C++ primer plus\第十三章\多态\多态\main.cpp(8,9): warning C4101: 'p_clients': unreferenced local variable
+  多态.cpp
+  Generating Code...
+  多态.vcxproj -> C:\Users\admin\Desktop\学习\C++\C-primer-plus\C++ primer plus\第十三章\多态\多态\Debug\多态.exe
