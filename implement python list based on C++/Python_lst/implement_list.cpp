@@ -6,6 +6,11 @@
 #include <map>
 #include <cassert>
 using namespace std;
+list::list(const list& l)
+{
+	str = l.str;
+	lst = l.lst;
+}
 void list:: append(double n)
 {
 	lst.push_tail(n);
@@ -171,9 +176,9 @@ list operator-(double n,  list& lst1)
 list list ::operator +(const list& l) 
 {
 	lst.merge(l.lst);
-	return  *this;
+	return *this;
 }
-ostream& operator <<(ostream& os,   const list& lst1)
+ostream& operator <<(ostream& os,  const list& lst1)
 {
 	lst1.lst.print_list();
 	return os;

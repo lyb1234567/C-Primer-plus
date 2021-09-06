@@ -12,6 +12,7 @@ private:
 public:
 	list();
 	list( string str);
+	list(const list& l);
 	int len() { return lst.len(); }
 	void append(double n);
 	void append( string s);
@@ -28,8 +29,6 @@ public:
 	list operator +(const list& l);
 	list operator -(double n);
 	friend ostream& operator <<(ostream& os, const list& lst);
-	friend ostream& operator<<(ostream& os, list[]);
-	//friend list operator+(list& l1, list& l2);
 	friend list operator +(double n,  list& lst1);
     friend list operator -(double n,  list& lst1);
 	int operator[](int index)

@@ -36,7 +36,7 @@ void Link_list::print_list()const  {
     {
         if (temp->str == " " &&!(temp->link) && temp->next != NULL)
         {
-            cout << temp->data << ",";
+            cout << temp->data<<",";
         }
         else if (temp->data == NULL && !(temp->link)&& temp->next!=NULL)
         {
@@ -44,7 +44,7 @@ void Link_list::print_list()const  {
         }
         else if (temp->str == " " && !(temp->link)&& temp->next == NULL)
         {
-             cout << temp->data;
+            cout << temp->data;
         }
         else if (temp->data == NULL && !(temp->link) && temp->next == NULL)
         {

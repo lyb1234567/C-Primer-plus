@@ -12,15 +12,17 @@ int main()
 	list b;
 	list d;
 	list e;
-	e.append("j");
-	a.append("s");
-	b.append("s");
-	b.append("c");
+	e.append(1);
+	a.append(2);
+	b.append(3);
+	b.append(4);
 
 	d.append(9);
+	d.append(10);
 	a.append(7);
-	list c = e+a + b + d;
-	cout << c[0];
+	a.append(d);
+	list c = list(a + b);
+	cout <<c;
 
 	return 0;
 
