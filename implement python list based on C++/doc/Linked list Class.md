@@ -376,12 +376,12 @@ check if index ==0:
 
 ### extend()
 
-Basically it does the exactly the same thing as push_tail() function,just take a linked list an argument.
+Basically it does the exactly the same thing as [merge()](#merge) function,just take a linked list an argument.
 
 #### perducode implementation
 
 ```C++
 void insert(const linked list &l)
-push_tail(l)
+merge(l)
 ```
 
