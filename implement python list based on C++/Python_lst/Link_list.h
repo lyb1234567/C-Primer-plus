@@ -33,6 +33,7 @@ public:
     void reverse();
     void insert(int index, double num);
     void insert(int index, string str);
+    void insert(int index, const Link_list& l);
     Node* get_head() { return head; };
     bool remove(double a);
     bool remove( string str);

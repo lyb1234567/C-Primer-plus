@@ -428,6 +428,30 @@ void Link_list::insert(int index, string str)
         }
     }
 }
+void Link_list::insert(int index, const Link_list& l)
+{
+    if (index == 0)
+    {
+        push_head(l);
+    }
+    else
+    {
+        Node* temp = head;
+        Node* in = new Node();
+        in->link = new Link_list(l);
+        int count = 0;
+        while (temp)
+        {
+            count = count + 1;
+            if (count == index)
+            {
+                in->next = temp->next;
+                temp->next = in;
+            }
+            temp = temp->next;
+        }
+    }
+}
 int Link_list::find_nth(int n)
 {
     if (len() == 0)

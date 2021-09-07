@@ -144,6 +144,10 @@ void list::insert(int index, string str)
 {
 	lst.insert(index, str);
 }
+void list::insert(int index, const list & l)
+{
+	lst.insert(index, l.lst);
+}
 void list::clear()
 {
 	int a = len();
