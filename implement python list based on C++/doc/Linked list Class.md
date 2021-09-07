@@ -18,6 +18,7 @@
 - [remove_duplix()](#remove_duplix)
 - [count()](#count)
 - [insert()](#insert)
+- [extend()](#extend)
 
 
 
@@ -369,5 +370,18 @@ check if index ==0:
             }
             temp = temp->next;
         }
+```
+
+
+
+### extend()
+
+Basically it does the exactly the same thing as push_tail() function,just take a linked list an argument.
+
+#### perducode implementation
+
+```C++
+void insert(const linked list &l)
+push_tail(l)
 ```
 
