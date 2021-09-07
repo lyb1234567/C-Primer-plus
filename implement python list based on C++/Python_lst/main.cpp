@@ -9,20 +9,11 @@ int main()
 {
 	using namespace std;
 	list a;
-	list b;
-	list d;
-	list e;
-	e.append(1);
-	a.append(2);
-	b.append(3);
-	b.append(4);
-
-	d.append(9);
-	d.append(10);
-	a.append(7);
-	a.append(d);
-	list c = list(a + b);
-	cout <<c;
+	a.append(0);
+	a.append(1);
+	a.insert(1, 2);
+	a.insert(1, "sb");
+	cout << a;
 
 	return 0;
 

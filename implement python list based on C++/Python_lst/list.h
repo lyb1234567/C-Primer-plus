@@ -9,6 +9,7 @@ class list
 private:
 	Link_list lst;
 	string str;
+	int len_list;
 public:
 	list();
 	list( string str);
@@ -24,6 +25,8 @@ public:
 	double max();
 	double min();
 	void sort();
+	void insert(int index, double num);
+	void insert(int index, string str);
 	bool isempty() { return lst.isempty();}
 	list operator +(double n);
 	list operator +(const list& l);

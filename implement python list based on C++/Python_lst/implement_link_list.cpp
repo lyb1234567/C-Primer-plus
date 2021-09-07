@@ -380,6 +380,54 @@ void Link_list::remove_duplix()
         }
     }
 }
+void Link_list::insert(int index, double num)
+{
+    if (index == 0)
+    {
+        push_head(num);
+    }
+    else 
+    {
+        Node* temp = head;
+        Node* in = new Node();
+        in->data = num;
+        int count = 0;
+        while (temp)
+        {
+            count = count + 1;
+            if (count == index)
+            {
+                in->next = temp->next;
+                temp->next = in;
+            }
+            temp = temp->next;
+        }
+    }
+}
+void Link_list::insert(int index, string str)
+{
+    if (index == 0)
+    {
+        push_head(str);
+    }
+    else
+    {
+        Node* temp = head;
+        Node* in = new Node();
+        in->str = str;
+        int count = 0;
+        while (temp)
+        {
+            count = count + 1;
+            if (count == index)
+            {
+                in->next = temp->next;
+                temp->next = in;
+            }
+            temp = temp->next;
+        }
+    }
+}
 int Link_list::find_nth(int n)
 {
     if (len() == 0)

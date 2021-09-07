@@ -31,6 +31,8 @@ public:
     void push_tail(const Link_list& lst);
     void change_head(Node* n) { head = n; };
     void reverse();
+    void insert(int index, double num);
+    void insert(int index, string str);
     Node* get_head() { return head; };
     bool remove(double a);
     bool remove( string str);

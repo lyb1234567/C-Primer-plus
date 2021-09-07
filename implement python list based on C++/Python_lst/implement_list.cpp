@@ -136,6 +136,14 @@ int list::count(string n)
 {
 	return lst.count(n);
 }
+void list::insert(int index, double num)
+{
+	lst.insert(index, num);
+}
+void list::insert(int index, string str)
+{
+	lst.insert(index, str);
+}
 void list::clear()
 {
 	int a = len();
