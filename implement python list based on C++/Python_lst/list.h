@@ -28,6 +28,7 @@ public:
 	void insert(int index, double num);
 	void insert(int index, string str);
 	void insert(int index, const list& a);
+	void extend(const list& a);
 	bool isempty() { return lst.isempty();}
 	list operator +(double n);
 	list operator +(const list& l);

@@ -17,6 +17,7 @@ int main()
 	a.insert(1, 2);
 	a.insert(1, "sb");
 	a.insert(1,b);
+	a.extend(b);
 	cout << a;
 	return 0;
 

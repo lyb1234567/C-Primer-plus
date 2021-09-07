@@ -29,12 +29,13 @@ public:
     void push_tail( double new_data);
     void push_tail(string new_str);
     void push_tail(const Link_list& lst);
-    void change_head(Node* n) { head = n; };
+    void change_head(Node* n) { head = n; };   
+    Node* get_head() { return head; };
     void reverse();
     void insert(int index, double num);
     void insert(int index, string str);
     void insert(int index, const Link_list& l);
-    Node* get_head() { return head; };
+    void extend(const Link_list& l);
     bool remove(double a);
     bool remove( string str);
     void add_number(double n);

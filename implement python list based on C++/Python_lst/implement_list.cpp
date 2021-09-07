@@ -148,6 +148,10 @@ void list::insert(int index, const list & l)
 {
 	lst.insert(index, l.lst);
 }
+void list::extend(const list& l)
+{
+	lst.extend(l.lst);
+}
 void list::clear()
 {
 	int a = len();
