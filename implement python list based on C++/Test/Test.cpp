@@ -171,6 +171,13 @@ namespace Test
 			}
 			Assert::AreEqual(1, h);
 		}
-
+		TEST_METHOD(insert_int)
+		{
+			list a;
+			a.append(0);
+			a.append(1);
+			a.insert(1, 2);
+			Assert::AreEqual(2, a[1]);
+		}
 	};
 }
