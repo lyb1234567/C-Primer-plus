@@ -454,7 +454,7 @@ void Link_list::insert(int index, const Link_list& l)
 }
 void Link_list::extend(const Link_list& l)
 {
-    push_tail(l);
+    merge(l);
 }
 int Link_list::find_nth(int n)
 {
