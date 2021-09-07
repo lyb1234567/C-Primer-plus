@@ -17,6 +17,7 @@
 - [search()](#serach)
 - [remove_duplix()](#remove_duplix)
 - [count()](#count)
+- [insert()](#insert)
 
 
 
@@ -337,5 +338,36 @@ count the number of each element in the whole linked list bascially implemented 
         current = current->next;
     }
     return b[n];
+```
+
+
+
+### insert()
+
+This function can take three different data types like double,string and linked list. Which require the an index entered then the second argument can be pushed into the linked list.
+
+#### perducode implementation
+
+```C++
+check if index ==0:
+  if so:
+     call pushhead(argument)
+  else:
+      scan the whole linked list
+       Node* temp = head;
+       // create a new to push in
+        Node* in = new Node();
+        //insert the argument
+        int count = 0;
+        while (temp)
+        {
+            count = count + 1;
+            if (count == index)
+            {
+                in->next = temp->next;
+                temp->next = in;
+            }
+            temp = temp->next;
+        }
 ```
 
